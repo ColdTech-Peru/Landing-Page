@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frigora</title>
+    <link rel="icon" href="./assets/frigora%201.jpeg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+<!-- Header -->
+<header class="header">
+    <div class="container nav">
+        <a href="#" class="nav-logo">
+            <img src="./assets/frigora%201.jpeg" alt="IceTrack Logo">
+            <span data-i18n="app_name"></span>
+        </a>
+        <nav class="nav-menu">
+            <a href="#inicio" data-i18n="home">Inicio</a>
+            <a href="#beneficios" data-i18n="benefits">Beneficios</a>
+            <a href="#sobre-nosotros" data-i18n="about_us">Sobre Nosotros</a>
+            <a href="#icetrack-en-accion" data-i18n="frigora_in_action">Frigora en Acción</a>
+            <a href="#testimonios" data-i18n="testimonials">Testimonios</a>
+            <a href="#contactanos" data-i18n="contact_us">Contáctanos</a>
+
+        </nav>
+        <div class="flex items-center gap-4">
+            <div class="language-switch">
+                <span id="lang-es" class="lang-option active">ES</span> | <span id="lang-en" class="lang-option">EN</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content" style="gap: 20px;">
+            <div class="hero-text">
+                <h1 data-i18n="hero_title"></h1>
+                <p data-i18n="hero_subtitle"></p>
+            </div>
+
+            <img src="assets/hero-image-container.jpeg">
+        </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="benefits-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="benefits_title">Beneficios</h2>
+            <div class="flex justify-center mb-10 gap-4">
+                <button class="benefit-filter-btn active" data-target="businesses" data-i18n="for_businesses_btn">Para negocios</button>
+                <button class="benefit-filter-btn" data-target="companies" data-i18n="for_companies_btn">Para compañías</button>
+            </div>
+            <div class="benefits-cards">
+                <!-- Business Card 1 -->
+                <div class="benefit-card" data-user-group="businesses">
+                    <i class="fas fa-temperature-low"></i>
+                    <h3 data-i18n="benefit_1_title">Reducción de Pérdidas de Inventario</h3>
+                    <p data-i18n="benefit_1_desc">Prevenimos fallas térmicas y minimizamos el descarte de productos, aumentando tu rentabilidad.</p>
+                </div>
+                <!-- Business Card 2 -->
+                <div class="benefit-card" data-user-group="businesses">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3 data-i18n="benefit_2_title">Optimización de Costos</h3>
+                    <p data-i18n="benefit_2_desc">Te ayudamos a pasar del mantenimiento reactivo a uno predictivo, reduciendo gastos de emergencia y consumo energético.</p>
+                </div>
+                <!-- Business Card 3 -->
+                <div class="benefit-card" data-user-group="businesses">
+                    <i class="fas fa-chart-line"></i>
+                    <h3 data-i18n="benefit_3_title">Toma de Decisiones Informada</h3>
+                    <p data-i18n="benefit_3_desc">Accede a datos precisos y en tiempo real para optimizar tu operación y la gestión de tus activos.</p>
+                </div>
+                <!-- Companies Card 1 -->
+                <div class="benefit-card hidden" data-user-group="companies">
+                    <i class="fas fa-tools"></i>
+                    <h3 data-i18n="benefit_4_title">Aumento de la Eficiencia Operativa</h3>
+                    <p data-i18n="benefit_4_desc">Gestiona tus tareas de forma inteligente, atiende a más clientes en menos tiempo y genera reportes al instante.</p>
+                </div>
+                <!-- Companies Card 2 -->
+                <div class="benefit-card hidden" data-user-group="companies">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3 data-i18n="benefit_5_title">Mejora de la Fidelización</h3>
+                    <p data-i18n="benefit_5_desc">Fortalece la confianza con un servicio proactivo y transparente, mejorando la retención de clientes a largo plazo.</p>
+                </div>
+                <!-- Companies Card 3 -->
+                <div class="benefit-card hidden" data-user-group="companies">
+                    <i class="fas fa-star"></i>
+                    <h3 data-i18n="benefit_6_title">Posicionamiento en el Mercado</h3>
+                    <p data-i18n="benefit_6_desc">Diferénciate de la competencia con una solución tecnológica que te permite captar nuevos clientes de forma más efectiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="sobre-nosotros" class="about-us-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_us_title">Sobre Nosotros</h2>
+            <div class="about-content">
+                <div class="mission">
+                    <h3 data-i18n="mission_title">Misión</h3>
+                    <p data-i18n="mission_desc">Proporcionar una solución tecnológica inteligente que permita a los negocios proteger su inventario y optimizar la gestión de sus equipos de refrigeración.</p>
+
+                </div>
+                <div class="vision">
+                    <h3 data-i18n="vision_title">Visión</h3>
+                    <p data-i18n="vision_desc">Ser la empresa líder en gestión y mantenimiento de equipos de refrigeración en el mercado nacional y expandirnos a nivel internacional.</p>
+
+                </div>
+
+            </div>
+    </section>
+
+    <section id="icetrack-en-accion" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-10" data-i18n="icetrack_in_action_title">Lo que hace Frigora</h2>
+            <div class="flex flex-col md:flex-row items-center gap-20">
+                <div class="md:w-1/2">
+                    <p class="action-description" data-i18n="frigora_in_action_desc" >
+                        Frigora redefine la supervisión térmica mediante un ecosistema inteligente que integra monitoreo en tiempo real y alertas predictivas para una gestión operativa impecable. Nuestra plataforma optimiza la interacción entre dueños de negocios y proveedores de servicios, facilitando desde la solicitud técnica hasta el control avanzado de activos; esto garantiza la protección absoluta de tu inventario, maximiza la vida útil de tus equipos y reduce drásticamente los costos operativos.</p>
+                </div>
+                <img src="assets/frigora%201.jpeg" >
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="testimonials_title">Casos de Éxito</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonial_1">"Implementar Frigora cambió las reglas del juego para nuestra cadena. Ahora gestionamos alertas críticas desde el celular, evitando pérdidas que antes eran inevitables."</p>
+                    <div class="testimonial-author">
+                        <img src="https://ui-avatars.com/api/?name=Valeria+Mendoza&background=004aad&color=fff" alt="Valeria Mendoza">
+                        <div class="author-info">
+                            <h4 data-i18n="author_1">Valeria Mendoza</h4>
+                            <p data-i18n="position_1">Gerente de Logística Fría</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonial_2">"La capacidad de anticipar fallas mecánicas a través de los datos me permite ofrecer un servicio premium. Mis clientes confían más en mi trabajo gracias a los reportes de Frigora."</p>
+                    <div class="testimonial-author">
+                        <img src="https://ui-avatars.com/api/?name=Ricardo+Torres&background=0c8ddf&color=fff" alt="Ricardo Torres">
+                        <div class="author-info">
+                            <h4 data-i18n="author_2">Ricardo Torres</h4>
+                            <p data-i18n="position_2">Ingeniero de Soporte Técnico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonial_3">"Pasamos de un mantenimiento reactivo a uno inteligente. El ahorro en consumo eléctrico y la extensión de vida de mis compresores justificaron la inversión en semanas."</p>
+                    <div class="testimonial-author">
+                        <img src="https://ui-avatars.com/api/?name=Elena+Casas&background=004aad&color=fff" alt="Elena Casas">
+                        <div class="author-info">
+                            <h4 data-i18n="author_3">Elena Casas</h4>
+                            <p data-i18n="position_3">Dueña de Market Gourmet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonial_4">"La interfaz es impecable. Logramos centralizar el control de más de 50 equipos en distintas sedes, optimizando nuestras rutas de servicio de forma drástica."</p>
+                    <div class="testimonial-author">
+                        <img src="https://ui-avatars.com/api/?name=Javier+Solis&background=0c8ddf&color=fff" alt="Javier Solís">
+                        <div class="author-info">
+                            <h4 data-i18n="author_4">Javier Solís</h4>
+                            <p data-i18n="position_4">Jefe de Infraestructura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contactanos" class="contact-section">
+        <div class="container contact-content">
+
+            <div class="contact-form-container">
+                <h2 data-i18n="contact_title">Contáctanos</h2>
+                <p data-i18n="contact_subtitle">Completa el formulario y te contactaremos para coordinar una demostración gratuita.</p>
+                <br>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Nombre completo" data-i18n-placeholder="full_name" required>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" data-i18n-placeholder="email" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Mensaje" data-i18n-placeholder="message_text"></textarea>
+                    <button type="submit" data-i18n="send_message">Enviar</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <p>Frostshield</p>
+            <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
