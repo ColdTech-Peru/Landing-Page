@@ -8,6 +8,7 @@ const translations = {
         testimonials: "Experiencias",
         contact_us: "Contáctanos",
         register: "Comenzar Ahora",
+        learn_more: "Conoce Más",
 
         // Hero
         hero_title: "Liderando la Próxima Generación en Control Térmico",
@@ -76,6 +77,7 @@ const translations = {
         testimonials: "Success Stories",
         contact_us: "Contact Us",
         register: "Get Started",
+        learn_more: "Learn More",
 
         // Hero
         hero_title: "Leading the Next Generation in Thermal Management",

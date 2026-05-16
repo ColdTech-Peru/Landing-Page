@@ -1039,3 +1039,30 @@ footer {
     color: #004aad;
     font-weight: 800;
 }
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 42px;
+    padding: 0 26px;
+
+    background: #004aad;
+    color: white;
+
+    font-weight: 600;
+    font-size: 15px;
+
+    border-radius: 12px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 74, 173, 0.25);
+
+    line-height: 1;
+}
+
+.hero-btn:hover {
+    background: #0c8ddf;
+    transform: translateY(-2px);
+}
