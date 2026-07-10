@@ -34,6 +34,8 @@ const translations = {
 
         // Sobre Nosotros
         about_us_title: "Nuestra Esencia",
+        about_us_title1: "Nosotros",
+
         mission_title: "Nuestra Misión",
         mission_desc: "Empoderar el ecosistema de refrigeración mediante una plataforma integral que conecta a dueños, técnicos y proveedores. Buscamos erradicar la incertidumbre operativa y garantizar la continuidad de tu negocio.",
         vision_title: "Nuestra Visión",
@@ -105,6 +107,8 @@ const translations = {
 
         // About Us
         about_us_title: "Our Essence",
+        about_us_title1: "About Us",
+
         mission_title: "Our Mission",
         mission_desc: "To empower the refrigeration ecosystem through an integrated platform that connects owners, technicians, and suppliers. We aim to eradicate operational uncertainty and ensure business continuity.",
         vision_title: "Our Vision",
